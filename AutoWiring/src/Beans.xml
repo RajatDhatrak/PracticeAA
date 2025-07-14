@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+			
+			<bean id="Fac" class="COM.Faculty">
+			<property name="Fid" value="20"></property>
+				<property name="Fname" value="Nilesh"></property>
+				
+			</bean>
+			
+			<bean id="bat" class="COM.Batch" autowire="byType">
+			<property name="Bid" value="202"></property>
+				<property name="Bname" value="java"></property> 
+<!-- 				<property name="faculty" ref="Fac"></property> -->
+			</bean>
+			
+		<bean id="stu" class="COM.Student" autowire="byType">
+		<property name="Sid" value="101"></property>
+		<property name="Sname" value="rahul"></property>
+<!-- 		<property name="batch" ref="bat"></property> -->
+		</bean>
+		
+			
+			</beans>
